@@ -1,0 +1,17 @@
+@use "util/mixins.scss" as mix;
+
+@include mix.createSpace("pa", "padding");
+@include mix.createSpace("px", "padding-left", "padding-right");
+@include mix.createSpace("py", "padding-top", "padding-bottom");
+@include mix.createSpace("pl", "padding-left");
+@include mix.createSpace("pr", "padding-right");
+@include mix.createSpace("pt", "padding-top");
+@include mix.createSpace("pb", "padding-bottom");
+
+@include mix.createSpace("ma", "margin");
+@include mix.createSpace("mx", "margin-left", "margin-right");
+@include mix.createSpace("my", "margin-top", "margin-bottom");
+@include mix.createSpace("ml", "margin-left");
+@include mix.createSpace("mr", "margin-right");
+@include mix.createSpace("mt", "margin-top");
+@include mix.createSpace("mb", "margin-bottom");

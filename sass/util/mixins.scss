@@ -1,0 +1,19 @@
+@mixin createSpace($pre, $props...) {
+	@for $i from 1 through 24 {
+		.#{$pre}-#{$i} {
+			@each $prop in $props {
+				#{$prop}: calc(4px * $i) !important;
+			}
+		}
+	}
+}
+
+@mixin createBorder($pre, $props) {
+	@for $i from 1 through 24 {
+		.#{$pre}-#{$i} {
+			@each $prop in $props {
+				#{$prop}: $i solid $color !important;
+			}
+		}
+	}
+}
